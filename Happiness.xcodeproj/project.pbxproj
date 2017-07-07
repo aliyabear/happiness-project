@@ -9,33 +9,19 @@
 /* Begin PBXBuildFile section */
 		4D894E951F0D5A3600FB135D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894E941F0D5A3600FB135D /* AppDelegate.swift */; };
 		4D894E971F0D5A3600FB135D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894E961F0D5A3600FB135D /* ViewController.swift */; };
-		4D894E9A1F0D5A3600FB135D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E981F0D5A3600FB135D /* Main.storyboard */; };
 		4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9B1F0D5A3600FB135D /* Assets.xcassets */; };
 		4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9D1F0D5A3600FB135D /* LaunchScreen.storyboard */; };
-		4D894EB11F0ED15C00FB135D /* ColourSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894EB01F0ED15C00FB135D /* ColourSelection.swift */; };
-		4D894EB61F0EDDEC00FB135D /* ViewAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894EB51F0EDDEC00FB135D /* ViewAdapterProtocol.swift */; };
-		4D894EB91F0EDEB100FB135D /* PresenterAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894EB81F0EDEB100FB135D /* PresenterAdapterProtocol.swift */; };
-		4D894EBD1F0EE09400FB135D /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894EBA1F0EE09400FB135D /* UseCaseProtocol.swift */; };
-		4D894EBE1F0EE09400FB135D /* UseCaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894EBB1F0EE09400FB135D /* UseCaseRequestProtocol.swift */; };
-		4D894EBF1F0EE09400FB135D /* UseCaseResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894EBC1F0EE09400FB135D /* UseCaseResponseProtocol.swift */; };
-		4D894EC11F0EE0A600FB135D /* ColourSelectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894EC01F0EE0A600FB135D /* ColourSelectionProtocol.swift */; };
+		4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D894E911F0D5A3600FB135D /* happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D894E941F0D5A3600FB135D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D894E961F0D5A3600FB135D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D894E991F0D5A3600FB135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D894E9B1F0D5A3600FB135D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D894E9E1F0D5A3600FB135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D894EA01F0D5A3600FB135D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D894EB01F0ED15C00FB135D /* ColourSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColourSelection.swift; path = Entities/ColourSelection.swift; sourceTree = "<group>"; };
-		4D894EB51F0EDDEC00FB135D /* ViewAdapterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewAdapterProtocol.swift; path = Adapters/Protocols/ViewAdapterProtocol.swift; sourceTree = "<group>"; };
-		4D894EB81F0EDEB100FB135D /* PresenterAdapterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresenterAdapterProtocol.swift; path = Adapters/Protocols/PresenterAdapterProtocol.swift; sourceTree = "<group>"; };
-		4D894EBA1F0EE09400FB135D /* UseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UseCaseProtocol.swift; path = UseCases/Protocols/UseCaseProtocol.swift; sourceTree = "<group>"; };
-		4D894EBB1F0EE09400FB135D /* UseCaseRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UseCaseRequestProtocol.swift; path = UseCases/Protocols/UseCaseRequestProtocol.swift; sourceTree = "<group>"; };
-		4D894EBC1F0EE09400FB135D /* UseCaseResponseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UseCaseResponseProtocol.swift; path = UseCases/Protocols/UseCaseResponseProtocol.swift; sourceTree = "<group>"; };
-		4D894EC01F0EE0A600FB135D /* ColourSelectionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColourSelectionProtocol.swift; path = Entities/Protocols/ColourSelectionProtocol.swift; sourceTree = "<group>"; };
+		4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSelectionCollectionViewCell.swift; path = Happiness/ColorSelectionCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +38,6 @@
 		4D894E881F0D5A3600FB135D = {
 			isa = PBXGroup;
 			children = (
-				4D894EB21F0EDBAE00FB135D /* Adapters */,
-				4D894EA71F0EC92800FB135D /* UseCases */,
-				4D894EA61F0EC91D00FB135D /* Entities */,
 				4D894E931F0D5A3600FB135D /* Happiness */,
 				4D894E921F0D5A3600FB135D /* Products */,
 			);
@@ -73,65 +56,13 @@
 			children = (
 				4D894E941F0D5A3600FB135D /* AppDelegate.swift */,
 				4D894E961F0D5A3600FB135D /* ViewController.swift */,
-				4D894E981F0D5A3600FB135D /* Main.storyboard */,
 				4D894E9B1F0D5A3600FB135D /* Assets.xcassets */,
 				4D894E9D1F0D5A3600FB135D /* LaunchScreen.storyboard */,
 				4D894EA01F0D5A3600FB135D /* Info.plist */,
+				4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */,
 			);
 			name = Happiness;
 			path = happiness;
-			sourceTree = "<group>";
-		};
-		4D894EA61F0EC91D00FB135D /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				4D894EB31F0EDD8900FB135D /* Protocols */,
-				4D894EB01F0ED15C00FB135D /* ColourSelection.swift */,
-			);
-			name = Entities;
-			sourceTree = "<group>";
-		};
-		4D894EA71F0EC92800FB135D /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				4D894EB41F0EDD9700FB135D /* Protocols */,
-			);
-			name = UseCases;
-			sourceTree = "<group>";
-		};
-		4D894EB21F0EDBAE00FB135D /* Adapters */ = {
-			isa = PBXGroup;
-			children = (
-				4D894EB71F0EDDF300FB135D /* Protocols */,
-			);
-			name = Adapters;
-			sourceTree = "<group>";
-		};
-		4D894EB31F0EDD8900FB135D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				4D894EC01F0EE0A600FB135D /* ColourSelectionProtocol.swift */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
-		4D894EB41F0EDD9700FB135D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				4D894EBA1F0EE09400FB135D /* UseCaseProtocol.swift */,
-				4D894EBB1F0EE09400FB135D /* UseCaseRequestProtocol.swift */,
-				4D894EBC1F0EE09400FB135D /* UseCaseResponseProtocol.swift */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
-		4D894EB71F0EDDF300FB135D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				4D894EB51F0EDDEC00FB135D /* ViewAdapterProtocol.swift */,
-				4D894EB81F0EDEB100FB135D /* PresenterAdapterProtocol.swift */,
-			);
-			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +127,6 @@
 			files = (
 				4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */,
 				4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */,
-				4D894E9A1F0D5A3600FB135D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,29 +137,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D894EC11F0EE0A600FB135D /* ColourSelectionProtocol.swift in Sources */,
-				4D894EB61F0EDDEC00FB135D /* ViewAdapterProtocol.swift in Sources */,
-				4D894EBD1F0EE09400FB135D /* UseCaseProtocol.swift in Sources */,
-				4D894EBF1F0EE09400FB135D /* UseCaseResponseProtocol.swift in Sources */,
-				4D894EBE1F0EE09400FB135D /* UseCaseRequestProtocol.swift in Sources */,
+				4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */,
 				4D894E971F0D5A3600FB135D /* ViewController.swift in Sources */,
-				4D894EB11F0ED15C00FB135D /* ColourSelection.swift in Sources */,
 				4D894E951F0D5A3600FB135D /* AppDelegate.swift in Sources */,
-				4D894EB91F0EDEB100FB135D /* PresenterAdapterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D894E981F0D5A3600FB135D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D894E991F0D5A3600FB135D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D894E9D1F0D5A3600FB135D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

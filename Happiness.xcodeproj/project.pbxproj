@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D1B9CF0422B5BBE919FC7A /* Pods_happiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0C5697FDE2512E75FE211B /* Pods_happiness.framework */; };
 		4D894E951F0D5A3600FB135D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894E941F0D5A3600FB135D /* AppDelegate.swift */; };
-		4D894E971F0D5A3600FB135D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894E961F0D5A3600FB135D /* ViewController.swift */; };
+		4D894E971F0D5A3600FB135D /* ColorSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894E961F0D5A3600FB135D /* ColorSelectionViewController.swift */; };
 		4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9B1F0D5A3600FB135D /* Assets.xcassets */; };
 		4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9D1F0D5A3600FB135D /* LaunchScreen.storyboard */; };
 		4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */; };
+		4DCE815A1F129F810065B8CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DCE81591F129F810065B8CD /* GoogleService-Info.plist */; };
+		4DFCB2C91F12B05D00F18656 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */; };
+		4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CB1F12B2E600F18656 /* Configuration.swift */; };
+		4DFCB2CF1F12FDEB00F18656 /* HappinessSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */; };
+		4DFCB2D21F12FF7200F18656 /* ConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2D11F12FF7200F18656 /* ConfigurationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0C5697FDE2512E75FE211B /* Pods_happiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_happiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D894E911F0D5A3600FB135D /* happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D894E941F0D5A3600FB135D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D894E961F0D5A3600FB135D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D894E961F0D5A3600FB135D /* ColorSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorSelectionViewController.swift; path = ../../happiness/ColorSelectionViewController.swift; sourceTree = "<group>"; };
 		4D894E9B1F0D5A3600FB135D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D894E9E1F0D5A3600FB135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D894EA01F0D5A3600FB135D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSelectionCollectionViewCell.swift; path = Happiness/ColorSelectionCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		4DCE81591F129F810065B8CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "happiness/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
+		4DFCB2CB1F12B2E600F18656 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Configuration/Configuration.swift; sourceTree = SOURCE_ROOT; };
+		4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessSelection.swift; sourceTree = "<group>"; };
+		4DFCB2D11F12FF7200F18656 /* ConfigurationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationHelper.swift; path = Configuration/ConfigurationHelper.swift; sourceTree = SOURCE_ROOT; };
+		D02AC3F17755641D9A84275B /* Pods-happiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happiness/Pods-happiness.debug.xcconfig"; sourceTree = "<group>"; };
+		E2C4B4982EC5E369BD20C2AA /* Pods-happiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-happiness/Pods-happiness.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D1B9CF0422B5BBE919FC7A /* Pods_happiness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +53,11 @@
 		4D894E881F0D5A3600FB135D = {
 			isa = PBXGroup;
 			children = (
+				4DCE81591F129F810065B8CD /* GoogleService-Info.plist */,
 				4D894E931F0D5A3600FB135D /* Happiness */,
 				4D894E921F0D5A3600FB135D /* Products */,
+				508EBD0301DC807194963124 /* Pods */,
+				6D223FBD405DC1A4248FC97C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,15 +72,62 @@
 		4D894E931F0D5A3600FB135D /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
+				4DFCB2CD1F12FDBD00F18656 /* Model */,
+				4DFCB2CA1F12B2CB00F18656 /* Configuration */,
+				4DCE81581F103E940065B8CD /* Views */,
 				4D894E941F0D5A3600FB135D /* AppDelegate.swift */,
-				4D894E961F0D5A3600FB135D /* ViewController.swift */,
 				4D894E9B1F0D5A3600FB135D /* Assets.xcassets */,
 				4D894E9D1F0D5A3600FB135D /* LaunchScreen.storyboard */,
 				4D894EA01F0D5A3600FB135D /* Info.plist */,
-				4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */,
 			);
 			name = Happiness;
 			path = happiness;
+			sourceTree = "<group>";
+		};
+		4DCE81581F103E940065B8CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */,
+				4D894E961F0D5A3600FB135D /* ColorSelectionViewController.swift */,
+				4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */,
+			);
+			name = Views;
+			path = ../Happiness/Views;
+			sourceTree = "<group>";
+		};
+		4DFCB2CA1F12B2CB00F18656 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4DFCB2CB1F12B2E600F18656 /* Configuration.swift */,
+				4DFCB2D11F12FF7200F18656 /* ConfigurationHelper.swift */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		4DFCB2CD1F12FDBD00F18656 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */,
+			);
+			name = Model;
+			path = ../Happiness/Model;
+			sourceTree = "<group>";
+		};
+		508EBD0301DC807194963124 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D02AC3F17755641D9A84275B /* Pods-happiness.debug.xcconfig */,
+				E2C4B4982EC5E369BD20C2AA /* Pods-happiness.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D223FBD405DC1A4248FC97C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C0C5697FDE2512E75FE211B /* Pods_happiness.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D894EA31F0D5A3600FB135D /* Build configuration list for PBXNativeTarget "happiness" */;
 			buildPhases = (
+				BDDD7F66E613BA72D91B6D9D /* [CP] Check Pods Manifest.lock */,
 				4D894E8D1F0D5A3600FB135D /* Sources */,
 				4D894E8E1F0D5A3600FB135D /* Frameworks */,
 				4D894E8F1F0D5A3600FB135D /* Resources */,
+				230328BE7D437EFBF7877FE0 /* [CP] Embed Pods Frameworks */,
+				B720FFE8AAFFC72394E1DDAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,18 +195,71 @@
 			files = (
 				4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */,
 				4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */,
+				4DCE815A1F129F810065B8CD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		230328BE7D437EFBF7877FE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-happiness/Pods-happiness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B720FFE8AAFFC72394E1DDAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-happiness/Pods-happiness-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDDD7F66E613BA72D91B6D9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D894E8D1F0D5A3600FB135D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFCB2CF1F12FDEB00F18656 /* HappinessSelection.swift in Sources */,
+				4DFCB2D21F12FF7200F18656 /* ConfigurationHelper.swift in Sources */,
 				4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */,
-				4D894E971F0D5A3600FB135D /* ViewController.swift in Sources */,
+				4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */,
+				4D894E971F0D5A3600FB135D /* ColorSelectionViewController.swift in Sources */,
+				4DFCB2C91F12B05D00F18656 /* GoogleSignInViewController.swift in Sources */,
 				4D894E951F0D5A3600FB135D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +373,7 @@
 		};
 		4D894EA41F0D5A3600FB135D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02AC3F17755641D9A84275B /* Pods-happiness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3BAQAK67MV;
@@ -265,6 +387,7 @@
 		};
 		4D894EA51F0D5A3600FB135D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C4B4982EC5E369BD20C2AA /* Pods-happiness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3BAQAK67MV;

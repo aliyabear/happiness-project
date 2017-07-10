@@ -17,7 +17,7 @@ class ColorSelectionViewController: UICollectionViewController {
 
     var randomizedColors: Array<UIColor>
     let reuseIdentifier = "happyColorCell"
-    
+    //let colors: Dictionary<UIColor: String>
     // Google Sign-In Stuff
     
     var authentication: GIDAuthentication
@@ -133,7 +133,7 @@ class ColorSelectionViewController: UICollectionViewController {
         let service = GTLRSheetsService()
         service.authorizer = authentication.fetcherAuthorizer()
         
-        let range = "Sheet4!G21"
+        let cellToUpdate = Configuration.sharedInstance().googleSheetIDName + "!G21"
         
         // time starts at C2
         // date starts at

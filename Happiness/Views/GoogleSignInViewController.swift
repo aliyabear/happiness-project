@@ -66,51 +66,6 @@ class GoogleSignInViewController: UIViewController, GIDSignInDelegate, GIDSignIn
         }
     }
     
-    // Display (in the UITextView) the names and majors of students in a sample
-    // spreadsheet:
-    // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-    func listMajors() {
-        output.text = "Getting sheet data..."
-        let spreadsheetId = "1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms"
-        let range = "Class Data!A2:E"
-        let query = GTLRSheetsQuery_SpreadsheetsValuesGet
-            .query(withSpreadsheetId: spreadsheetId, range:range)
-        service.executeQuery(query,
-                             delegate: self,
-                             didFinish: #selector(displayResultWithTicket(ticket:finishedWithObject:error:))
-            
-        )
-    }
-    
-    // Process the response and display output
-    func displayResultWithTicket(ticket: GTLRServiceTicket,
-                                 finishedWithObject result : GTLRSheets_ValueRange,
-                                 error : NSError?) {
-        
-        if let error = error {
-            showAlert(title: "Error", message: error.localizedDescription)
-            return
-        }
-        
-        var majorsString = "\n\n"
-        let rows = result.values!
-        
-        if rows.isEmpty {
-            output.text = "No data found."
-            return
-        }
-        
-        majorsString += "Name, Major:\n"
-        for row in rows {
-            let name = row[0]
-            let major = row[4]
-            
-            majorsString += "\(name), \(major)\n"
-        }
-        
-        output.text = majorsString
-    }
-    
     
     // Helper for showing an alert
     func showAlert(title : String, message: String) {

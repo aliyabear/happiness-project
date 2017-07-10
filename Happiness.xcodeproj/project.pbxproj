@@ -17,7 +17,6 @@
 		4DFCB2C91F12B05D00F18656 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */; };
 		4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CB1F12B2E600F18656 /* Configuration.swift */; };
 		4DFCB2CF1F12FDEB00F18656 /* HappinessSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */; };
-		4DFCB2D21F12FF7200F18656 /* ConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2D11F12FF7200F18656 /* ConfigurationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		4DFCB2CB1F12B2E600F18656 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Configuration/Configuration.swift; sourceTree = SOURCE_ROOT; };
 		4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessSelection.swift; sourceTree = "<group>"; };
-		4DFCB2D11F12FF7200F18656 /* ConfigurationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationHelper.swift; path = Configuration/ConfigurationHelper.swift; sourceTree = SOURCE_ROOT; };
 		D02AC3F17755641D9A84275B /* Pods-happiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happiness/Pods-happiness.debug.xcconfig"; sourceTree = "<group>"; };
 		E2C4B4982EC5E369BD20C2AA /* Pods-happiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-happiness/Pods-happiness.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				4DFCB2CB1F12B2E600F18656 /* Configuration.swift */,
-				4DFCB2D11F12FF7200F18656 /* ConfigurationHelper.swift */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -255,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DFCB2CF1F12FDEB00F18656 /* HappinessSelection.swift in Sources */,
-				4DFCB2D21F12FF7200F18656 /* ConfigurationHelper.swift in Sources */,
 				4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */,
 				4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */,
 				4D894E971F0D5A3600FB135D /* ColorSelectionViewController.swift in Sources */,

@@ -113,13 +113,9 @@ class ColorSelectionViewController: UICollectionViewController {
         let selectedColor = randomizedColors[indexPath.item]
         let message = "Selected color: \(Configuration.sharedInstance().colors[selectedColor]!)"
         
-        
         storeHappiness(selectedColor: selectedColor.toHexString)
         
-        // show alert message
-        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)        //navigationController?.popViewController(animated: true)
+        AlertControllerHelper.showAlert(title: "Thank You", message: message)
     }
     
     func storeHappiness(selectedColor: String?) {
@@ -133,7 +129,33 @@ class ColorSelectionViewController: UICollectionViewController {
         let service = GTLRSheetsService()
         service.authorizer = authentication.fetcherAuthorizer()
         
-        let cellToUpdate = Configuration.sharedInstance().googleSheetIDName + "!G21"
+        
+        let date = Date()
+        // make 2 a constant or a configuration setting
+        let row = 2 + Calendar.current.component(.hour, from: date)
+        
+        
+        let calendar = Calendar.current
+        
+        // Specify date components
+        var dateComponents = DateComponents()
+        dateComponents.year = 2017
+        dateComponents.month = 7
+        dateComponents.day = 9
+        
+        
+        // Create date from components
+        let userCalendar = Calendar.current // user calendar
+        let someDateTime = userCalendar.date(from: dateComponents)
+        
+        // Replace the hour (time) of both dates with 00:00
+        let date1 = calendar.startOfDay(for: someDateTime)
+        let date2 = calendar.startOfDay(for: date)
+        
+        let components = calendar.dateComponents([.day], from: date1, to: date2)        // make a constant for start date
+        let column = components.day //Calendar.current.component(<#T##component: Calendar.Component##Calendar.Component#>, from: <#T##Date#>)
+        
+        let cellToUpdate = Configuration.sharedInstance().googleSheetIDName + "!G\(row)"
         
         // time starts at C2
         // date starts at
@@ -142,7 +164,7 @@ class ColorSelectionViewController: UICollectionViewController {
         valueRange.values =  [[("#" + selectedColor) as Any]]//Array<Any>()
         
         let query = GTLRSheetsQuery_SpreadsheetsValuesUpdate
-            .query(withObject: valueRange, spreadsheetId: spreadsheetId, range:range)
+            .query(withObject: valueRange, spreadsheetId: spreadsheetId, range:cellToUpdate)
         
         query.valueInputOption = "USER_ENTERED"
     
@@ -150,31 +172,6 @@ class ColorSelectionViewController: UICollectionViewController {
                              delegate: self,
                              didFinish: #selector(displayResultWithTicket(ticket:finishedWithObject:error:)))
         
-    }
-    
-    func setupDateHeader(forDate: Date = Date(), usingAuthorizedService: GTLRSheetsService) {
-        let spreadSheetID = Configuration.sharedInstance().googleSpreadSheetID
-        
-      /*  guard  usingAuthorizedService.authorizer == nil else {
-            return
-        }
-        */
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-        
-        let expectedDateHeader = dateFormatter.string(from: forDate)
-        
-        // check if column exists, we should move this into a helper func for our spreadsheet
-        
-        let range = Configuration.sharedInstance().googleSheetIDName + "!" + Configuration.sharedInstance().googleSpreadSheetDateRowStart
-        
-        let query = GTLRSheetsQuery_SpreadsheetsValuesGet
-                    .query(withSpreadsheetId: Configuration.sharedInstance().googleSpreadSheetID,
-                           range: range)
-        
-       /* service.executeQuery(query,
-                             delegate: self,
-                             didFinish: #selector(displayResultWithTicket(ticket:finishedWithObject:error:)))*/
     }
     
     // Process the response and display output
@@ -190,20 +187,5 @@ class ColorSelectionViewController: UICollectionViewController {
         
     }
     
-    // Helper for showing an alert
-    func showAlert(title : String, message: String) {
-        let alert = UIAlertController(
-            title: title,
-            message: message,
-            preferredStyle: UIAlertControllerStyle.alert
-        )
-        let ok = UIAlertAction(
-            title: "OK",
-            style: UIAlertActionStyle.default,
-            handler: nil
-        )
-        alert.addAction(ok)
-        present(alert, animated: true, completion: nil)
-    }
 }
 

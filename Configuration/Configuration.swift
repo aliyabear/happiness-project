@@ -46,11 +46,6 @@ class Configuration {
         return _googleSheetIDName
     }
     
-    private let _dayStartOffsetInHours = 4
-    var dayStartOffsetInHours: Int {
-        return _dayStartOffsetInHours
-    }
-    
     var colors: Dictionary<UIColor, String> {
         get
         {

@@ -51,7 +51,7 @@ class GoogleSignInViewController: UIViewController, GIDSignInDelegate, GIDSignIn
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
               withError error: Error!) {
         if let error = error {
-            showAlert(title: "Authentication Error", message: error.localizedDescription)
+            AlertControllerHelper.showAlert(title: "Authentication Error", message: error.localizedDescription)
             self.service.authorizer = nil
         } else {
             
@@ -68,18 +68,5 @@ class GoogleSignInViewController: UIViewController, GIDSignInDelegate, GIDSignIn
     
     
     // Helper for showing an alert
-    func showAlert(title : String, message: String) {
-        let alert = UIAlertController(
-            title: title,
-            message: message,
-            preferredStyle: UIAlertControllerStyle.alert
-        )
-        let ok = UIAlertAction(
-            title: "OK",
-            style: UIAlertActionStyle.default,
-            handler: nil
-        )
-        alert.addAction(ok)
-        present(alert, animated: true, completion: nil)
-    }
+    
 }

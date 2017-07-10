@@ -13,6 +13,7 @@
 		4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9B1F0D5A3600FB135D /* Assets.xcassets */; };
 		4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9D1F0D5A3600FB135D /* LaunchScreen.storyboard */; };
 		4DA5FDA21F13214E00FAFE5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5FDA11F13214E00FAFE5C /* GoogleService-Info.plist */; };
+		4DA5FDA41F134F8000FAFE5C /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5FDA31F134F8000FAFE5C /* AlertControllerHelper.swift */; };
 		4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */; };
 		4DFCB2C91F12B05D00F18656 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */; };
 		4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CB1F12B2E600F18656 /* Configuration.swift */; };
@@ -28,6 +29,7 @@
 		4D894E9E1F0D5A3600FB135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D894EA01F0D5A3600FB135D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA5FDA11F13214E00FAFE5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4DA5FDA31F134F8000FAFE5C /* AlertControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertControllerHelper.swift; path = Helpers/AlertControllerHelper.swift; sourceTree = "<group>"; };
 		4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSelectionCollectionViewCell.swift; path = Happiness/ColorSelectionCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		4DFCB2CB1F12B2E600F18656 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Configuration/Configuration.swift; sourceTree = SOURCE_ROOT; };
@@ -82,9 +84,18 @@
 			path = happiness;
 			sourceTree = "<group>";
 		};
+		4DA5FDA51F13518500FAFE5C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4DA5FDA31F134F8000FAFE5C /* AlertControllerHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		4DCE81581F103E940065B8CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4DA5FDA51F13518500FAFE5C /* Helpers */,
 				4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */,
 				4D894E961F0D5A3600FB135D /* ColorSelectionViewController.swift */,
 				4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */,
@@ -255,6 +266,7 @@
 				4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */,
 				4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */,
 				4D894E971F0D5A3600FB135D /* ColorSelectionViewController.swift in Sources */,
+				4DA5FDA41F134F8000FAFE5C /* AlertControllerHelper.swift in Sources */,
 				4DFCB2C91F12B05D00F18656 /* GoogleSignInViewController.swift in Sources */,
 				4D894E951F0D5A3600FB135D /* AppDelegate.swift in Sources */,
 			);

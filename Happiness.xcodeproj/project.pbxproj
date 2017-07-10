@@ -12,8 +12,8 @@
 		4D894E971F0D5A3600FB135D /* ColorSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894E961F0D5A3600FB135D /* ColorSelectionViewController.swift */; };
 		4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9B1F0D5A3600FB135D /* Assets.xcassets */; };
 		4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9D1F0D5A3600FB135D /* LaunchScreen.storyboard */; };
+		4DA5FDA21F13214E00FAFE5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5FDA11F13214E00FAFE5C /* GoogleService-Info.plist */; };
 		4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */; };
-		4DCE815A1F129F810065B8CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DCE81591F129F810065B8CD /* GoogleService-Info.plist */; };
 		4DFCB2C91F12B05D00F18656 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */; };
 		4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CB1F12B2E600F18656 /* Configuration.swift */; };
 		4DFCB2CF1F12FDEB00F18656 /* HappinessSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */; };
@@ -27,8 +27,8 @@
 		4D894E9B1F0D5A3600FB135D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D894E9E1F0D5A3600FB135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D894EA01F0D5A3600FB135D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA5FDA11F13214E00FAFE5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSelectionCollectionViewCell.swift; path = Happiness/ColorSelectionCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
-		4DCE81591F129F810065B8CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "happiness/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		4DFCB2CB1F12B2E600F18656 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Configuration/Configuration.swift; sourceTree = SOURCE_ROOT; };
 		4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessSelection.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		4D894E881F0D5A3600FB135D = {
 			isa = PBXGroup;
 			children = (
-				4DCE81591F129F810065B8CD /* GoogleService-Info.plist */,
+				4DA5FDA11F13214E00FAFE5C /* GoogleService-Info.plist */,
 				4D894E931F0D5A3600FB135D /* Happiness */,
 				4D894E921F0D5A3600FB135D /* Products */,
 				508EBD0301DC807194963124 /* Pods */,
@@ -191,8 +191,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */,
+				4DA5FDA21F13214E00FAFE5C /* GoogleService-Info.plist in Resources */,
 				4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */,
-				4DCE815A1F129F810065B8CD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -59,14 +59,19 @@ class GoogleSignInViewController: UIViewController, GIDSignInDelegate, GIDSignIn
             self.output.isHidden = false
             self.service.authorizer = user.authentication.fetcherAuthorizer()
             
-            // move to next navigation page
-            navigationController?.pushViewController(ColorSelectionViewController(withAuthentication: user.authentication), animated: true)
+            // move this stuff to a separate method
+            let colorSelectionDelegate = RandomlyDisplayColorSelectionUseCase(Configuration.sharedInstance().colors)
+            let colorSelectionLayoutDelegate = ColorSelectionViewLayoutUseCase()
+            let handleSelectionAdapterDelegate = GoogleSheetsSelectionAdapter(withAuthenticatedService: user.authentication)
             
-           // listMajors()
+            let colorSelectionViewController = ColorSelectionViewController(
+                colorSelectionDelegate: colorSelectionDelegate,
+                colorSelectionLayoutDelegate: colorSelectionLayoutDelegate,
+                handleSelectionAdapterDelegate: handleSelectionAdapterDelegate)
+            
+            // move to next navigation page
+            navigationController?.pushViewController(colorSelectionViewController, animated: true)
         }
     }
     
-    
-    // Helper for showing an alert
-    
-}
+    }

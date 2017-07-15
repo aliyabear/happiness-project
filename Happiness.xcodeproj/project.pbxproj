@@ -8,32 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		22D1B9CF0422B5BBE919FC7A /* Pods_happiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0C5697FDE2512E75FE211B /* Pods_happiness.framework */; };
+		4D15A4611F1982A800656709 /* GoogleSheetsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15A4601F1982A800656709 /* GoogleSheetsConfiguration.swift */; };
+		4D15A4631F19842900656709 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15A4621F19842900656709 /* GoogleSignInViewController.swift */; };
+		4D15A4651F19843C00656709 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D15A4641F19843C00656709 /* GoogleService-Info.plist */; };
+		4D15A4681F1985AF00656709 /* DisplayColorSelectionUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15A4671F1985AF00656709 /* DisplayColorSelectionUseCaseProtocol.swift */; };
+		4D15A46A1F1986C200656709 /* RandomlyDisplayColorSelectionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15A4691F1986C200656709 /* RandomlyDisplayColorSelectionUseCase.swift */; };
+		4D15A46C1F1988DE00656709 /* ColorSelectionViewLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15A46B1F1988DE00656709 /* ColorSelectionViewLayoutProtocol.swift */; };
+		4D15A46E1F19890A00656709 /* ColorSelectionViewLayoutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15A46D1F19890A00656709 /* ColorSelectionViewLayoutUseCase.swift */; };
+		4D15A4721F198EEA00656709 /* HandleSelectionAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15A4711F198EEA00656709 /* HandleSelectionAdapterProtocol.swift */; };
+		4D15A4741F198F4800656709 /* GoogleSheetsSelectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15A4731F198F4800656709 /* GoogleSheetsSelectionAdapter.swift */; };
 		4D894E951F0D5A3600FB135D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894E941F0D5A3600FB135D /* AppDelegate.swift */; };
 		4D894E971F0D5A3600FB135D /* ColorSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D894E961F0D5A3600FB135D /* ColorSelectionViewController.swift */; };
 		4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9B1F0D5A3600FB135D /* Assets.xcassets */; };
 		4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9D1F0D5A3600FB135D /* LaunchScreen.storyboard */; };
-		4DA5FDA21F13214E00FAFE5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5FDA11F13214E00FAFE5C /* GoogleService-Info.plist */; };
 		4DA5FDA41F134F8000FAFE5C /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5FDA31F134F8000FAFE5C /* AlertControllerHelper.swift */; };
-		4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */; };
-		4DFCB2C91F12B05D00F18656 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */; };
 		4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CB1F12B2E600F18656 /* Configuration.swift */; };
-		4DFCB2CF1F12FDEB00F18656 /* HappinessSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C0C5697FDE2512E75FE211B /* Pods_happiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_happiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D15A4601F1982A800656709 /* GoogleSheetsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSheetsConfiguration.swift; sourceTree = "<group>"; };
+		4D15A4621F19842900656709 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
+		4D15A4641F19843C00656709 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D15A4671F1985AF00656709 /* DisplayColorSelectionUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayColorSelectionUseCaseProtocol.swift; path = UseCases/Protocols/DisplayColorSelectionUseCaseProtocol.swift; sourceTree = SOURCE_ROOT; };
+		4D15A4691F1986C200656709 /* RandomlyDisplayColorSelectionUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomlyDisplayColorSelectionUseCase.swift; path = UseCases/RandomlyDisplayColorSelectionUseCase.swift; sourceTree = SOURCE_ROOT; };
+		4D15A46B1F1988DE00656709 /* ColorSelectionViewLayoutProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSelectionViewLayoutProtocol.swift; path = UseCases/Protocols/ColorSelectionViewLayoutProtocol.swift; sourceTree = SOURCE_ROOT; };
+		4D15A46D1F19890A00656709 /* ColorSelectionViewLayoutUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSelectionViewLayoutUseCase.swift; path = UseCases/ColorSelectionViewLayoutUseCase.swift; sourceTree = SOURCE_ROOT; };
+		4D15A4711F198EEA00656709 /* HandleSelectionAdapterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleSelectionAdapterProtocol.swift; sourceTree = "<group>"; };
+		4D15A4731F198F4800656709 /* GoogleSheetsSelectionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSheetsSelectionAdapter.swift; sourceTree = "<group>"; };
 		4D894E911F0D5A3600FB135D /* happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D894E941F0D5A3600FB135D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D894E961F0D5A3600FB135D /* ColorSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorSelectionViewController.swift; path = ../../happiness/ColorSelectionViewController.swift; sourceTree = "<group>"; };
 		4D894E9B1F0D5A3600FB135D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D894E9E1F0D5A3600FB135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D894EA01F0D5A3600FB135D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DA5FDA11F13214E00FAFE5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4DA5FDA31F134F8000FAFE5C /* AlertControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertControllerHelper.swift; path = Helpers/AlertControllerHelper.swift; sourceTree = "<group>"; };
-		4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSelectionCollectionViewCell.swift; path = Happiness/ColorSelectionCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
-		4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		4DFCB2CB1F12B2E600F18656 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Configuration/Configuration.swift; sourceTree = SOURCE_ROOT; };
-		4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessSelection.swift; sourceTree = "<group>"; };
 		D02AC3F17755641D9A84275B /* Pods-happiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happiness/Pods-happiness.debug.xcconfig"; sourceTree = "<group>"; };
 		E2C4B4982EC5E369BD20C2AA /* Pods-happiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-happiness/Pods-happiness.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,10 +60,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D15A45E1F19825D00656709 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				4D15A45F1F19828400656709 /* GoogleSheets */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		4D15A45F1F19828400656709 /* GoogleSheets */ = {
+			isa = PBXGroup;
+			children = (
+				4D15A4641F19843C00656709 /* GoogleService-Info.plist */,
+				4D15A4621F19842900656709 /* GoogleSignInViewController.swift */,
+				4D15A4601F1982A800656709 /* GoogleSheetsConfiguration.swift */,
+				4D15A4731F198F4800656709 /* GoogleSheetsSelectionAdapter.swift */,
+			);
+			path = GoogleSheets;
+			sourceTree = "<group>";
+		};
+		4D15A4661F19858C00656709 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4D15A4671F1985AF00656709 /* DisplayColorSelectionUseCaseProtocol.swift */,
+				4D15A46B1F1988DE00656709 /* ColorSelectionViewLayoutProtocol.swift */,
+			);
+			name = Protocols;
+			path = UseCases/Protocols;
+			sourceTree = "<group>";
+		};
+		4D15A46F1F198C4300656709 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				4D15A4701F198C5200656709 /* Protocols */,
+			);
+			name = Adapters;
+			path = ../Adapters;
+			sourceTree = "<group>";
+		};
+		4D15A4701F198C5200656709 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4D15A4711F198EEA00656709 /* HandleSelectionAdapterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		4D894E881F0D5A3600FB135D = {
 			isa = PBXGroup;
 			children = (
-				4DA5FDA11F13214E00FAFE5C /* GoogleService-Info.plist */,
+				4D15A45E1F19825D00656709 /* External */,
 				4D894E931F0D5A3600FB135D /* Happiness */,
 				4D894E921F0D5A3600FB135D /* Products */,
 				508EBD0301DC807194963124 /* Pods */,
@@ -72,7 +128,8 @@
 		4D894E931F0D5A3600FB135D /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
-				4DFCB2CD1F12FDBD00F18656 /* Model */,
+				4D15A46F1F198C4300656709 /* Adapters */,
+				4DFCB2CD1F12FDBD00F18656 /* UseCases */,
 				4DFCB2CA1F12B2CB00F18656 /* Configuration */,
 				4DCE81581F103E940065B8CD /* Views */,
 				4D894E941F0D5A3600FB135D /* AppDelegate.swift */,
@@ -96,9 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				4DA5FDA51F13518500FAFE5C /* Helpers */,
-				4DCE81561F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift */,
 				4D894E961F0D5A3600FB135D /* ColorSelectionViewController.swift */,
-				4DFCB2C81F12B05D00F18656 /* GoogleSignInViewController.swift */,
 			);
 			name = Views;
 			path = ../Happiness/Views;
@@ -112,12 +167,14 @@
 			name = Configuration;
 			sourceTree = "<group>";
 		};
-		4DFCB2CD1F12FDBD00F18656 /* Model */ = {
+		4DFCB2CD1F12FDBD00F18656 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				4DFCB2CE1F12FDEB00F18656 /* HappinessSelection.swift */,
+				4D15A4661F19858C00656709 /* Protocols */,
+				4D15A4691F1986C200656709 /* RandomlyDisplayColorSelectionUseCase.swift */,
+				4D15A46D1F19890A00656709 /* ColorSelectionViewLayoutUseCase.swift */,
 			);
-			name = Model;
+			name = UseCases;
 			path = ../Happiness/Model;
 			sourceTree = "<group>";
 		};
@@ -202,8 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */,
-				4DA5FDA21F13214E00FAFE5C /* GoogleService-Info.plist in Resources */,
 				4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */,
+				4D15A4651F19843C00656709 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,12 +319,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DFCB2CF1F12FDEB00F18656 /* HappinessSelection.swift in Sources */,
-				4DCE81571F0FFEAF0065B8CD /* ColorSelectionCollectionViewCell.swift in Sources */,
+				4D15A4721F198EEA00656709 /* HandleSelectionAdapterProtocol.swift in Sources */,
 				4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */,
+				4D15A4631F19842900656709 /* GoogleSignInViewController.swift in Sources */,
+				4D15A4681F1985AF00656709 /* DisplayColorSelectionUseCaseProtocol.swift in Sources */,
+				4D15A4741F198F4800656709 /* GoogleSheetsSelectionAdapter.swift in Sources */,
+				4D15A46E1F19890A00656709 /* ColorSelectionViewLayoutUseCase.swift in Sources */,
+				4D15A4611F1982A800656709 /* GoogleSheetsConfiguration.swift in Sources */,
 				4D894E971F0D5A3600FB135D /* ColorSelectionViewController.swift in Sources */,
+				4D15A46A1F1986C200656709 /* RandomlyDisplayColorSelectionUseCase.swift in Sources */,
+				4D15A46C1F1988DE00656709 /* ColorSelectionViewLayoutProtocol.swift in Sources */,
 				4DA5FDA41F134F8000FAFE5C /* AlertControllerHelper.swift in Sources */,
-				4DFCB2C91F12B05D00F18656 /* GoogleSignInViewController.swift in Sources */,
 				4D894E951F0D5A3600FB135D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

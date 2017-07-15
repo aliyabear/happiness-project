@@ -34,15 +34,17 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMOAuth2 (1.1.4):
     - GTMSessionFetcher (~> 1.1)
-  - GTMSessionFetcher (1.1.10):
-    - GTMSessionFetcher/Full (= 1.1.10)
-  - GTMSessionFetcher/Core (1.1.10)
-  - GTMSessionFetcher/Full (1.1.10):
-    - GTMSessionFetcher/Core (= 1.1.10)
+  - GTMSessionFetcher (1.1.11):
+    - GTMSessionFetcher/Full (= 1.1.11)
+  - GTMSessionFetcher/Core (1.1.11)
+  - GTMSessionFetcher/Full (1.1.11):
+    - GTMSessionFetcher/Core (= 1.1.11)
+  - RxSwift (3.5.0)
 
 DEPENDENCIES:
   - Google/SignIn (~> 3.0.3)
   - GoogleAPIClientForREST/Sheets (~> 1.2.1)
+  - RxSwift
 
 SPEC CHECKSUMS:
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
@@ -53,8 +55,9 @@ SPEC CHECKSUMS:
   GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
-  GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
 
-PODFILE CHECKSUM: f57574016157cbe71255eddee9af0c65c47064cb
+PODFILE CHECKSUM: 333a994a2f380958bb0bc00b4b6a63643b45565d
 
 COCOAPODS: 1.2.1

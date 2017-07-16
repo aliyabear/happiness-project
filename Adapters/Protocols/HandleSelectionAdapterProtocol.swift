@@ -6,6 +6,8 @@
 //  Copyright © 2017 Aliya Hassam. All rights reserved.
 //
 
+import UIKit
+
 protocol HandleSelectionAdapterProtocol {
-    func submit(selection: UIColor) -> Bool
+    func submit(selection: UIColor?) -> Bool
 }

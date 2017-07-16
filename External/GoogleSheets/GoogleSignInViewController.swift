@@ -51,7 +51,7 @@ class GoogleSignInViewController: UIViewController, GIDSignInDelegate, GIDSignIn
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
               withError error: Error!) {
         if let error = error {
-            AlertControllerHelper.showAlert(title: "Authentication Error", message: error.localizedDescription)
+            AlertControllerHelper.showAlert(title: "Authentication Error", message: error.localizedDescription, controller: self)
             self.service.authorizer = nil
         } else {
             
@@ -60,9 +60,11 @@ class GoogleSignInViewController: UIViewController, GIDSignInDelegate, GIDSignIn
             self.service.authorizer = user.authentication.fetcherAuthorizer()
             
             // move this stuff to a separate method
-            let colorSelectionDelegate = RandomlyDisplayColorSelectionUseCase(Configuration.sharedInstance().colors)
+            let colorSelectionDelegate = RandomlyDisplayColorSelectionUseCase(colorSelection: Array(Configuration.sharedInstance().colors.keys))
+            
             let colorSelectionLayoutDelegate = ColorSelectionViewLayoutUseCase()
-            let handleSelectionAdapterDelegate = GoogleSheetsSelectionAdapter(withAuthenticatedService: user.authentication)
+            
+            let handleSelectionAdapterDelegate = GoogleSheetsSelectionAdapter(withAuthenticatedService: user.authentication, forConfiguration: GoogleSheetsConfiguration())
             
             let colorSelectionViewController = ColorSelectionViewController(
                 colorSelectionDelegate: colorSelectionDelegate,

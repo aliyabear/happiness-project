@@ -27,7 +27,7 @@ class ColorSelectionViewLayoutUseCase: ColorSelectionViewLayoutProtocol {
         let screenHeight = screen.size.height
         
         let cellWidth =  screenWidth - 15
-        let cellHeight = screenHeight / CGFloat(randomizedColors.count * 2)
+        let cellHeight = screenHeight / CGFloat(10)
         
         let size = CGSize(width: cellWidth, height: cellHeight)
         

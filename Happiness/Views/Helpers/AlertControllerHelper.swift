@@ -9,18 +9,28 @@
 import UIKit
 
 class AlertControllerHelper {
-    static func showAlert(title : String = "Alert", message: String) {
-        let alert = UIAlertController(
-            title: title,
-            message: message,
-            preferredStyle: UIAlertControllerStyle.alert
-        )
-        let ok = UIAlertAction(
-            title: "OK",
-            style: UIAlertActionStyle.default,
-            handler: nil
-        )
-        alert.addAction(ok)
-        present(alert, animated: true, completion: nil)
+    static func showAlert(title : String = "Alert", message: String, controller: UIViewController?) {
+        
+        let alert =
+            UIAlertController(
+                title: title,
+                message: message,
+                preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(
+            UIAlertAction(
+                title: "Click",
+                style: UIAlertActionStyle.default,
+                handler: nil))
+        
+        
+        if let controller = controller {
+            controller.present(alert, animated: true, completion: nil)
+        } else {
+            if let rootVC = UIApplication.shared.keyWindow?.rootViewController {
+                rootVC.present(alert, animated: true, completion: nil)
+            }
+        }
     }
+    
 }

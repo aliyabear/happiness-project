@@ -19,6 +19,7 @@ class RandomlyDisplayColorSelectionUseCase : DisplayColorSelectionUseCaseProtoco
     }
     
     init(colorSelection: [UIColor]) {
+        _colors = []
         randomizeColors(colorSelection);
     }
  
@@ -26,7 +27,7 @@ class RandomlyDisplayColorSelectionUseCase : DisplayColorSelectionUseCaseProtoco
         _colors = GKRandomSource
             .sharedRandom()
             .arrayByShufflingObjects(
-                in: Array(Configuration.sharedInstance().forColorSelection.keys))
+                in: Array(forColorSelection))
             as! Array<UIColor>
     }
     

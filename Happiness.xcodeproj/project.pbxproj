@@ -22,12 +22,13 @@
 		4D894E9C1F0D5A3600FB135D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9B1F0D5A3600FB135D /* Assets.xcassets */; };
 		4D894E9F1F0D5A3600FB135D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D894E9D1F0D5A3600FB135D /* LaunchScreen.storyboard */; };
 		4DA5FDA41F134F8000FAFE5C /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5FDA31F134F8000FAFE5C /* AlertControllerHelper.swift */; };
+		4DB177B71F1C1879003E6B37 /* GoogleSpreadSheetConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB177B61F1C1879003E6B37 /* GoogleSpreadSheetConfigurationProtocol.swift */; };
 		4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCB2CB1F12B2E600F18656 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C0C5697FDE2512E75FE211B /* Pods_happiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_happiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D15A4601F1982A800656709 /* GoogleSheetsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSheetsConfiguration.swift; sourceTree = "<group>"; };
+		4D15A4601F1982A800656709 /* GoogleSheetsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleSheetsConfiguration.swift; path = ../GoogleSheetsConfiguration.swift; sourceTree = "<group>"; };
 		4D15A4621F19842900656709 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		4D15A4641F19843C00656709 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D15A4671F1985AF00656709 /* DisplayColorSelectionUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayColorSelectionUseCaseProtocol.swift; path = UseCases/Protocols/DisplayColorSelectionUseCaseProtocol.swift; sourceTree = SOURCE_ROOT; };
@@ -43,6 +44,7 @@
 		4D894E9E1F0D5A3600FB135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D894EA01F0D5A3600FB135D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA5FDA31F134F8000FAFE5C /* AlertControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertControllerHelper.swift; path = Helpers/AlertControllerHelper.swift; sourceTree = "<group>"; };
+		4DB177B61F1C1879003E6B37 /* GoogleSpreadSheetConfigurationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSpreadSheetConfigurationProtocol.swift; sourceTree = "<group>"; };
 		4DFCB2CB1F12B2E600F18656 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Configuration/Configuration.swift; sourceTree = SOURCE_ROOT; };
 		D02AC3F17755641D9A84275B /* Pods-happiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happiness/Pods-happiness.debug.xcconfig"; sourceTree = "<group>"; };
 		E2C4B4982EC5E369BD20C2AA /* Pods-happiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-happiness/Pods-happiness.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,9 +73,9 @@
 		4D15A45F1F19828400656709 /* GoogleSheets */ = {
 			isa = PBXGroup;
 			children = (
+				4DB177B51F1C1850003E6B37 /* Configuration */,
 				4D15A4641F19843C00656709 /* GoogleService-Info.plist */,
 				4D15A4621F19842900656709 /* GoogleSignInViewController.swift */,
-				4D15A4601F1982A800656709 /* GoogleSheetsConfiguration.swift */,
 				4D15A4731F198F4800656709 /* GoogleSheetsSelectionAdapter.swift */,
 			);
 			path = GoogleSheets;
@@ -147,6 +149,15 @@
 				4DA5FDA31F134F8000FAFE5C /* AlertControllerHelper.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		4DB177B51F1C1850003E6B37 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4D15A4601F1982A800656709 /* GoogleSheetsConfiguration.swift */,
+				4DB177B61F1C1879003E6B37 /* GoogleSpreadSheetConfigurationProtocol.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		4DCE81581F103E940065B8CD /* Views */ = {
@@ -320,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D15A4721F198EEA00656709 /* HandleSelectionAdapterProtocol.swift in Sources */,
+				4DB177B71F1C1879003E6B37 /* GoogleSpreadSheetConfigurationProtocol.swift in Sources */,
 				4DFCB2CC1F12B2E600F18656 /* Configuration.swift in Sources */,
 				4D15A4631F19842900656709 /* GoogleSignInViewController.swift in Sources */,
 				4D15A4681F1985AF00656709 /* DisplayColorSelectionUseCaseProtocol.swift in Sources */,

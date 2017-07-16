@@ -11,17 +11,20 @@ import GoogleSignIn
 
 class GoogleSheetsSelectionAdapter: HandleSelectionAdapterProtocol {
     var authentication: GIDAuthentication
+    var configuration: GoogleSpreadSheetConfigurationProtocol
     
-    init(withAuthenticatedService: GIDAuthentication) {
+    init(withAuthenticatedService: GIDAuthentication,
+         forConfiguration: GoogleSpreadSheetConfigurationProtocol) {
         self.authentication = withAuthenticatedService
+        self.configuration = forConfiguration
     }
     
-    func submit(selection: UIColor) -> Bool {
-        guard let selectedColor = selectedColor else {
+    func submit(selection: UIColor?) -> Bool {
+        guard let selectedColor = selection else {
             return false
         }
         
-        let spreadsheetId = Configuration.sharedInstance().googleSpreadSheetID
+        let spreadsheetId = self.configuration.googleSpreadSheetID
         
         let service = GTLRSheetsService()
         service.authorizer = authentication.fetcherAuthorizer()
@@ -43,7 +46,10 @@ class GoogleSheetsSelectionAdapter: HandleSelectionAdapterProtocol {
         
         // Create date from components
         let userCalendar = Calendar.current // user calendar
-        let someDateTime = userCalendar.date(from: dateComponents)
+        
+        guard let someDateTime = userCalendar.date(from: dateComponents) else {
+            return false
+        }
         
         // Replace the hour (time) of both dates with 00:00
         let date1 = calendar.startOfDay(for: someDateTime)
@@ -52,7 +58,7 @@ class GoogleSheetsSelectionAdapter: HandleSelectionAdapterProtocol {
         let components = calendar.dateComponents([.day], from: date1, to: date2)        // make a constant for start date
         let column = components.day //Calendar.current.component(<#T##component: Calendar.Component##Calendar.Component#>, from: <#T##Date#>)
         
-        let cellToUpdate = Configuration.sharedInstance().googleSheetIDName + "!G\(row)"
+        let cellToUpdate = self.configuration.googleSpreadSheetName + "!G\(row)"
         
         // time starts at C2
         // date starts at
@@ -68,16 +74,18 @@ class GoogleSheetsSelectionAdapter: HandleSelectionAdapterProtocol {
         service.executeQuery(query,
                              delegate: self,
                              didFinish: #selector(displayResultWithTicket(ticket:finishedWithObject:error:)))
+        
+        return true;
 
     }
     
     // Process the response and display output
-    func displayResultWithTicket(ticket: GTLRServiceTicket,
+    @objc func displayResultWithTicket(ticket: GTLRServiceTicket,
                                  finishedWithObject result : GTLRSheets_ValueRange,
                                  error : NSError?) {
     
         if let error = error {
-            AlertControllerHelper.showAlert(title: "Error", message: error.localizedDescription)
+            AlertControllerHelper.showAlert(title: "Error", message: error.localizedDescription, controller: nil)
             return
         }
     }

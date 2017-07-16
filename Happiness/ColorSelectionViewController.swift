@@ -82,8 +82,8 @@ class ColorSelectionViewController: UICollectionViewController {
         let message = "Selected color: \(Configuration.sharedInstance().colors[selectedColor]!)"
         
         
-        if (self.handleSelectionAdapterDelegate.submit(selectedColor: self.colorSelectionDelegate.colors[indexPath.item])) {
-                AlertControllerHelper.showAlert(title: "Thank You", message: message)
+        if (self.handleSelectionAdapterDelegate.submit(selection: self.colorSelectionDelegate.colors[indexPath.item])) {
+                AlertControllerHelper.showAlert(title: "Thank You", message: message, controller: self)
         }
     }
 }

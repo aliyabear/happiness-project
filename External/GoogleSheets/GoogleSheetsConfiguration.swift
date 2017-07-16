@@ -8,14 +8,30 @@
 
 import Foundation
 
-class GoogleSheetsConfiguration {
+class GoogleSheetsConfiguration : GoogleSpreadSheetConfigurationProtocol {
     
-    // ID of Google Spread Sheet to use
-    let googleSpreadSheetID = "11nv0oM9nGKYJ9OGIzO9tPr3cVEF345sJYoOdAyoMoE8"
-    // Actual name of sheet to use
-    let googleSpreadSheetName = "Sheet4"
+    var googleSpreadSheetID: String {
+        get {
+            return "11nv0oM9nGKYJ9OGIzO9tPr3cVEF345sJYoOdAyoMoE8"
+        }
+    }
     
-    let googleSpreadSheetTimeColumnStart = ("B","1")
+    var googleSpreadSheetName: String {
+        get {
+            return "Sheet4"
+        }
+    }
     
-    let googleSpreadSheetDateRowStart = ("A","2")
+    var googleSpreadSheetTimeColumnStart: (String,String) {
+        get {
+            return ("B","1")
+        }
+    }
+    
+    var googleSpreadSheetDateRowStart: (String, String) {
+        get {
+            return ("A","2")
+        }
+    }
+
 }
